@@ -115,7 +115,7 @@ main
 .text-center{
     text-align: center;
 }
-.class-container{
+.skills-container{
    
     gap: 24px;
     display: flex;
@@ -167,4 +167,27 @@ footer input[type="text"], footer input[type="email"],footer textarea{
     margin-bottom: 24px;
     border: none;
 
+}
+
+/* responsive part */
+
+.hide{
+    display: none;
+}
+
+
+@media screen and (max-width: 576px)  {
+    .skills-container,.resume-container,footer,.about-items{
+       flex-direction: column;
+    }
+    footer,.about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"], footer input [type="email"],footer textarea{
+        width: calc(100% - 40px);
+    }
+    
 }
